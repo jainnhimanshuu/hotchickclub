@@ -1,6 +1,21 @@
 # HOT CHICK CLUB - Nashville Style Fried Chicken Website
 
-A modern, responsive website for HOT CHICK CLUB, a Nashville-style fried chicken restaurant. This website is built using the WellFood HTML template and customized for the HOT CHICK CLUB brand.
+A bold, modern website for HOT CHICK CLUB, a Nashville-style fried chicken restaurant that's not just selling chicken—we're building a lifestyle brand that people want to be part of. This website is built using the WellFood HTML template and customized for the HOT CHICK CLUB brand with our signature bold, playful, and cheeky personality.
+
+## 🎯 Brand Identity
+
+**"WHERE THE HOT ONES HANG OUT"** - HOT CHICK CLUB is a bold, modern fried chicken concept built for today's culture: fast, fun, full of flavor, and designed to scale. We're building a lifestyle brand that people want to be part of, with everything crafted to stand out both in real life and on social media.
+
+### Brand Values
+- **PLAYFUL** - Fun, engaging, and memorable experiences
+- **CHEEKY** - Bold personality with attitude
+- **BOLD** - Confident, striking, and unapologetic
+
+### Color Palette
+- **Deep Red** (#d32f2f) - Primary brand color
+- **Matte Black** (#212121) - Sophisticated contrast
+- **Neon White** (#ffffff) - Clean, bright accents
+- **Orange** (#ff6f00) - Energetic highlights
 
 ## 🍗 Features
 
@@ -56,6 +71,10 @@ dist/
 - **The Coop Sampler** - $9
 - **Squad Chicks** - $180
 - **Loaded Chick Tray** - $88
+
+## 📍 Location
+
+**HOT CHICK CLUB** is opening in Edmonton, Alberta, where there's a real hunger for new, exciting, and high-quality food experiences. Our first location will be at 123 Main Street, Edmonton, AB T5J 2R2.
 
 ## 🚀 Getting Started
 
