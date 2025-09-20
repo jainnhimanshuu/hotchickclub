@@ -28,6 +28,77 @@
 <link rel="stylesheet" href="assets/css/slick.min.css">
 <!-- Main Style -->
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- Masonry Gallery CSS -->
+<style>
+    .masonry-grid {
+        column-count: 4;
+        column-gap: 5px;
+        padding: 5px;
+    }
+
+    .masonry-item {
+        break-inside: avoid;
+        margin-bottom: 5px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .gallery-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .gallery-content {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .gallery-content h5 {
+        color: #ff0000;
+        margin: 0;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    @media (max-width: 1200px) {
+        .masonry-grid {
+            column-count: 3;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .masonry-grid {
+            column-count: 2;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .masonry-grid {
+            column-count: 1;
+        }
+    }
+</style>
 
 <body>
     <div class="page-wrapper">
@@ -46,9 +117,9 @@
             <div class="header-inner rel d-flex align-items-center">
                 <div class="logo-outer">
                     <div class="logo">
-                        <a href="index.html"
-                            style="color: #fff; font-size: 32px; font-weight: bold; text-decoration: none; font-family: 'Bebas Neue', cursive;">
-                            HOT CHICK<br><span style="color: #ff0000; font-size: 24px;">CLUB</span>
+                        <a href="/">
+                            <img src="assets/images/logos/logo.jpg" alt="Hot Chick Club"
+                                style="width: auto; height: 50px;">
                         </a>
                     </div>
                 </div>
@@ -58,9 +129,9 @@
                     <nav class="main-menu navbar-expand-lg">
                         <div class="navbar-header py-10">
                             <div class="mobile-logo">
-                                <a href="index.html"
-                                    style="color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; font-family: 'Bebas Neue', cursive;">
-                                    HOT CHICK<br><span style="color: #ff0000;">CLUB</span>
+                                <a href="/">
+                                    <img src="assets/images/logos/logo.jpg" alt="Hot Chick Club"
+                                        style="width: auto; height: 50px;">
                                 </a>
                             </div>
 
@@ -75,10 +146,10 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li><a href="index.html" style="color: #fff; font-weight: 500;">Home</a></li>
-                                <li><a href="menu.html" style="color: #fff; font-weight: 500;">Menu</a></li>
-                                <li><a href="about.html" style="color: #fff; font-weight: 500;">About Us</a></li>
-                                <li><a href="contact.html" style="color: #fff; font-weight: 500;">Contact Us</a></li>
+                                <li><a href="/" style="color: #fff; font-weight: 500;">Home</a></li>
+                                <li><a href="/menu" style="color: #fff; font-weight: 500;">Menu</a></li>
+                                <li><a href="/about" style="color: #fff; font-weight: 500;">About Us</a></li>
+                                <li><a href="/contact" style="color: #fff; font-weight: 500;">Contact Us</a></li>
                             </ul>
                         </div>
 

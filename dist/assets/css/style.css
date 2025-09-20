@@ -6453,7 +6453,7 @@ h6, .h6, .offer-card-item .available-item, .about-image-part .food-review .text,
 
 .gallery-item {
   position: relative;
-  margin-bottom: 30px; }
+  margin-bottom: 3px; }
   .gallery-item .gallery-image img {
     width: 100%; }
   .gallery-item .gallery-content {

@@ -30,6 +30,77 @@
 <link rel="stylesheet" href="assets/css/slick.min.css">
 <!-- Main Style -->
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- Masonry Gallery CSS -->
+<style>
+    .masonry-grid {
+        column-count: 4;
+        column-gap: 5px;
+        padding: 5px;
+    }
+
+    .masonry-item {
+        break-inside: avoid;
+        margin-bottom: 5px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .gallery-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .gallery-content {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .gallery-content h5 {
+        color: #ff0000;
+        margin: 0;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    @media (max-width: 1200px) {
+        .masonry-grid {
+            column-count: 3;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .masonry-grid {
+            column-count: 2;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .masonry-grid {
+            column-count: 1;
+        }
+    }
+</style>
 
 <body>
     <div class="page-wrapper">
@@ -48,9 +119,9 @@
             <div class="header-inner rel d-flex align-items-center">
                 <div class="logo-outer">
                     <div class="logo">
-                        <a href="index.html"
-                            style="color: #fff; font-size: 32px; font-weight: bold; text-decoration: none; font-family: 'Bebas Neue', cursive;">
-                            HOT CHICK<br><span style="color: #ff0000; font-size: 24px;">CLUB</span>
+                        <a href="/">
+                            <img src="assets/images/logos/logo.jpg" alt="Hot Chick Club"
+                                style="width: auto; height: 50px;">
                         </a>
                     </div>
                 </div>
@@ -60,9 +131,9 @@
                     <nav class="main-menu navbar-expand-lg">
                         <div class="navbar-header py-10">
                             <div class="mobile-logo">
-                                <a href="index.html"
-                                    style="color: #fff; font-size: 24px; font-weight: bold; text-decoration: none; font-family: 'Bebas Neue', cursive;">
-                                    HOT CHICK<br><span style="color: #ff0000;">CLUB</span>
+                                <a href="/">
+                                    <img src="assets/images/logos/logo.jpg" alt="Hot Chick Club"
+                                        style="width: auto; height: 50px;">
                                 </a>
                             </div>
 
@@ -77,10 +148,10 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li><a href="index.html" style="color: #fff; font-weight: 500;">Home</a></li>
-                                <li><a href="menu.html" style="color: #fff; font-weight: 500;">Menu</a></li>
-                                <li><a href="about.html" style="color: #fff; font-weight: 500;">About Us</a></li>
-                                <li><a href="contact.html" style="color: #fff; font-weight: 500;">Contact Us</a></li>
+                                <li><a href="/" style="color: #fff; font-weight: 500;">Home</a></li>
+                                <li><a href="/menu" style="color: #fff; font-weight: 500;">Menu</a></li>
+                                <li><a href="/about" style="color: #fff; font-weight: 500;">About Us</a></li>
+                                <li><a href="/contact" style="color: #fff; font-weight: 500;">Contact Us</a></li>
                             </ul>
                         </div>
 
@@ -604,36 +675,147 @@
         <!-- Gallery Area Start -->
         <div class="gallery-area rel z-1">
             <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-xl-4 col-sm-6">
-                        <div class="gallery-item" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+                <div class="masonry-grid">
+                    <div class="masonry-item" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+                        <div class="gallery-item">
                             <div class="gallery-image">
                                 <img src="assets/images/foodie/big-cluck.png" alt="Gallery">
                             </div>
-                            <div class="gallery-content">
-                                <h5>Big Cluck</h5>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Big Cluck</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-sm-6">
-                        <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"
-                            data-aos-offset="50">
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
                             <div class="gallery-image">
-                                <img src="assets/images/foodie/chick-club-sandwich.png" alt="Gallery">
+                                <img src="assets/images/foodie/The-Chick-Club-Sandwich.png" alt="Gallery">
                             </div>
-                            <div class="gallery-content">
-                                <h5>Chick Club Sandwich</h5>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Chick Club Sandwich</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-sm-6">
-                        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
-                            data-aos-offset="50">
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
                             <div class="gallery-image">
-                                <img src="assets/images/foodie/cluck-wings.png" alt="Gallery">
+                                <img src="assets/images/foodie/cluck-wings-6-pcs.png" alt="Gallery">
                             </div>
-                            <div class="gallery-content">
-                                <h5>Cluck Wings</h5>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Cluck Wings (6 pcs)</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/secret-chick.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Secret Chick</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/chick-stack-fries.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Chick Stack Fries</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/solo-stick.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Solo Stick</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/BONE-IN-NASHVILLE-SPICED-2-pcs.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Bone-in Nashville (2 pcs)</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/hot-chicks-fries.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Hot Chicks Fries</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/slaw-queen.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Slaw Queen</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/double-trouble-combo.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Double Trouble Combo</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/mixed-bag-meal.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Mixed Bag Meal</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-item" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1500"
+                        data-aos-offset="50">
+                        <div class="gallery-item">
+                            <div class="gallery-image">
+                                <img src="assets/images/foodie/Triple-Drum-Bash.png" alt="Gallery">
+                            </div>
+                            <div class="gallery-content"
+                                style="background: rgba(0,0,0,0.7); padding: 5px; display: flex; justify-content: center; align-items: center;">
+                                <h5 style="color: #ff0000; margin: 0; font-weight: bold;">Triple Drum Bash</h5>
                             </div>
                         </div>
                     </div>
@@ -663,32 +845,9 @@
                                 fun, full of flavor, and designed to scale. We're not just selling chicken; we're
                                 building a lifestyle brand that people want to be part of.</p>
                             <div class="about-btn-author mb-60">
-                                <a href="about.html" class="theme-btn">learn more us <i
+                                <a href="/about" class="theme-btn">learn more us <i
                                         class="far fa-arrow-alt-right"></i></a>
-                                <div class="author">
-                                    <img src="assets/images/about/author.jpg" alt="Author">
-                                    <h6>Ben A. Conners / <span>CEO & Founder</span></h6>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4 col-6">
-                                    <div class="counter-item counter-text-wrap">
-                                        <span class="count-text k-plus" data-speed="3000" data-stop="5">0</span>
-                                        <span class="counter-title">Heat Levels</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-6">
-                                    <div class="counter-item counter-text-wrap">
-                                        <span class="count-text plus" data-speed="3000" data-stop="100">0</span>
-                                        <span class="counter-title">Hot Dishes</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-6">
-                                    <div class="counter-item counter-text-wrap">
-                                        <span class="count-text plus" data-speed="3000" data-stop="1000">0</span>
-                                        <span class="counter-title">Happy Customers</span>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -700,32 +859,23 @@
                                     <div class="icon">
                                         <i class="flaticon-recommended-food"></i>
                                     </div>
-                                    <h4><a href="menu-burger.html">Best Quality Food</a></h4>
-                                    <p>Sed ut perspiciatis unde omnis este natus sit voluptatem</p>
+                                    <h4><a href="/menu">Best Quality Food</a></h4>
                                 </div>
                                 <div class="service-item">
                                     <div class="icon">
                                         <i class="flaticon-fast-delivery"></i>
                                     </div>
                                     <h4><a href="menu-burger.html">fast food delivery</a></h4>
-                                    <p>Sed ut perspiciatis unde omnis este natus sit voluptatem</p>
                                 </div>
                             </div>
                             <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
                                 data-aos-offset="50">
-                                <div class="service-item mt-30 rmt-0">
-                                    <div class="icon">
-                                        <i class="flaticon-cashback"></i>
-                                    </div>
-                                    <h4><a href="menu-burger.html">money back guarantee</a></h4>
-                                    <p>Sed ut perspiciatis unde omnis este natus sit voluptatem</p>
-                                </div>
+
                                 <div class="service-item">
                                     <div class="icon">
                                         <i class="flaticon-dish"></i>
                                     </div>
                                     <h4><a href="menu-burger.html">100% natural food</a></h4>
-                                    <p>Sed ut perspiciatis unde omnis este natus sit voluptatem</p>
                                 </div>
                             </div>
                         </div>
@@ -739,9 +889,7 @@
                 <div class="shape two">
                     <img src="assets/images/shapes/tomato.png" alt="Shape">
                 </div>
-                <div class="shape three">
-                    <img src="assets/images/shapes/pizza.png" alt="Shape">
-                </div>
+
             </div>
         </section>
         <!-- Why choose Us Area end -->
@@ -834,13 +982,7 @@
                         <div class="text">The Big Cluck is absolutely incredible! Perfectly crispy on the outside, juicy
                             on the inside. The heat levels are spot on - I went with Firestarter and it was exactly what
                             I wanted. Hot Chick Club knows how to do fried chicken right!</div>
-                        <div class="author">
-                            <img src="assets/images/testimonials/author3.jpg" alt="Author">
-                            <div class="description">
-                                <h5>Steven H. Paxson</h5>
-                                <span>CEO & Founder</span>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="testimonial-item">
                         <div class="quote"><i class="flaticon-quote"></i></div>
@@ -873,13 +1015,7 @@
                         <div class="text">The Big Cluck is absolutely incredible! Perfectly crispy on the outside, juicy
                             on the inside. The heat levels are spot on - I went with Firestarter and it was exactly what
                             I wanted. Hot Chick Club knows how to do fried chicken right!</div>
-                        <div class="author">
-                            <img src="assets/images/testimonials/author3.jpg" alt="Author">
-                            <div class="description">
-                                <h5>Steven H. Paxson</h5>
-                                <span>CEO & Founder</span>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -895,226 +1031,12 @@
         <!-- Testimonials Area end -->
 
 
-        <!-- Call To Action Area start -->
-        <section class="cta-area py-100 rel z-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-8">
-                        <div class="cta-content">
-                            <div class="section-title text-white mb-20">
-                                <span class="sub-title mb-5" style="color: #ff0000;">Ready to join the club?</span>
-                                <h2>Looking for hot chicken that hits different?</h2>
-                            </div>
-
-                            <div class="cta-badge" style="background-image: url(assets/images/shapes/cta-shape.png)">
-                                <span>hot<br> chicken</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cta-bg" style="background-image: url(assets/images/background/cta.jpg)"></div>
-        </section>
-        <!-- Call To Action Area end -->
 
 
-        <!-- Dishes Area start -->
-        <section class="dishes-area pt-130 rpt-100 rel z-1">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center mb-50" data-aos="fade-up" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <span class="sub-title mb-5" style="color: #ff0000;">popular dishes</span>
-                            <h2>explore our hot chicken menu</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration="1500"
-                        data-aos-offset="50">
-                        <div class="product-item-two">
-                            <div class="image">
-                                <img src="assets/images/dishes/dish1.png" alt="Dish">
-                            </div>
-                            <div class="content">
-                                <div class="ratting">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span>(5k)</span>
-                                </div>
-                                <h5><a href="product-details.html">fresh chicken burger</a></h5>
-                                <span class="price"><del>$50</del> $25</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="1500" data-aos-offset="50">
-                        <div class="product-item-two">
-                            <div class="image">
-                                <img src="assets/images/dishes/dish2.png" alt="Dish">
-                            </div>
-                            <div class="content">
-                                <div class="ratting">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span>(5k)</span>
-                                </div>
-                                <h5><a href="product-details.html">pizza with mushrooms</a></h5>
-                                <span class="price"><del>$50</del> $25</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100"
-                        data-aos-duration="1500" data-aos-offset="50">
-                        <div class="product-item-two">
-                            <div class="image">
-                                <img src="assets/images/dishes/dish3.png" alt="Dish">
-                            </div>
-                            <div class="content">
-                                <div class="ratting">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span>(5k)</span>
-                                </div>
-                                <h5><a href="product-details.html">double burger & fries</a></h5>
-                                <span class="price"><del>$50</del> $25</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="150"
-                        data-aos-duration="1500" data-aos-offset="50">
-                        <div class="product-item-two">
-                            <div class="image">
-                                <img src="assets/images/dishes/dish4.png" alt="Dish">
-                            </div>
-                            <div class="content">
-                                <div class="ratting">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span>(5k)</span>
-                                </div>
-                                <h5><a href="product-details.html">fried chicken french</a></h5>
-                                <span class="price"><del>$50</del> $25</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Dishes Area end -->
 
 
-        <!-- Blog Area start -->
-        <section class="blog-area pt-100 rpt-70 pb-90 rpb-60 rel z-1">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center mb-50" data-aos="fade-up" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <span class="sub-title mb-5" style="color: #ff0000;">latest news & blog</span>
-                            <h2>get every single hot chicken update</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <img src="assets/images/blog/blog1.jpg" alt="Blog">
-                                <ul class="blog-meta">
-                                    <li>
-                                        <a href="#">Quality Food</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">March 25, 2024</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">comments (5)</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content">
-                                <h4><a href="blog-details.html">Culinary Chronicles Exploring Gastronomic Wonders at
-                                        foodking Restaurant</a></h4>
-                                <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled
-                                    in the heart</p>
-                                <a href="blog-details.html" class="read-more">Read more <i
-                                        class="far fa-arrow-alt-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <img src="assets/images/blog/blog2.jpg" alt="Blog">
-                                <ul class="blog-meta">
-                                    <li>
-                                        <a href="#">Quality Food</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">March 25, 2024</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">comments (5)</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content">
-                                <h4><a href="blog-details.html">Culinary Chronicles Exploring Gastronomic Wonders at
-                                        foodking Restaurant</a></h4>
-                                <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled
-                                    in the heart</p>
-                                <a href="blog-details.html" class="read-more">Read more <i
-                                        class="far fa-arrow-alt-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500"
-                            data-aos-offset="50">
-                            <div class="image">
-                                <img src="assets/images/blog/blog3.jpg" alt="Blog">
-                                <ul class="blog-meta">
-                                    <li>
-                                        <a href="#">Quality Food</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">March 25, 2024</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">comments (5)</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content">
-                                <h4><a href="blog-details.html">Culinary Chronicles Exploring Gastronomic Wonders at
-                                        foodking Restaurant</a></h4>
-                                <p>Restaurant where culinary excellence meets hospitality in every dish we serve settled
-                                    in the heart</p>
-                                <a href="blog-details.html" class="read-more">Read more <i
-                                        class="far fa-arrow-alt-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Blog Area end -->
+
+
 
 
         <!-- footer area start -->
