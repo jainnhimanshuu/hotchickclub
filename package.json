@@ -1,0 +1,29 @@
+{
+  "name": "wellfood-template",
+  "version": "1.0.0",
+  "description": "WellFood Restaurant HTML Template with Component System",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "build-hotchick": "node hot-chick-build.js",
+    "dev": "node build.js --watch",
+    "clean": "rimraf dist",
+    "serve": "http-server dist -p 8080",
+    "serve-hotchick": "http-server dist -p 8080"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.10",
+    "http-server": "^14.1.1",
+    "rimraf": "^5.0.5"
+  },
+  "keywords": [
+    "html",
+    "template",
+    "restaurant",
+    "food",
+    "bootstrap"
+  ],
+  "author": "WellFood Team",
+  "license": "MIT"
+}

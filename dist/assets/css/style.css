@@ -3229,7 +3229,7 @@ h6, .h6, .offer-card-item .available-item, .about-image-part .food-review .text,
   margin-right: auto; }
   @media only screen and (max-width: 575px) {
     .main-menu .mobile-logo {
-      max-width: 70px; } }
+      max-width: 150px; } }
 
 @media only screen and (max-width: 991px) {
   .main-menu .collapse {
@@ -4280,11 +4280,11 @@ h6, .h6, .offer-card-item .available-item, .about-image-part .food-review .text,
   .offer-card-item .title {
     color: white;
     display: block;
-    font-size: 100px;
+    font-size: 50px;
     position: relative; }
     @media only screen and (max-width: 375px) {
       .offer-card-item .title {
-        font-size: 80px; } }
+        font-size: 40px; } }
   .offer-card-item .available-item {
     color: white;
     padding: 5px 10px 2px;
@@ -4300,12 +4300,12 @@ h6, .h6, .offer-card-item .available-item, .about-image-part .food-review .text,
     transform: translate(-50%, -50%);
     line-height: 1;
     top: 45%;
-    font: 8em var(--heading-font);
+    font: 4em var(--heading-font);
     line-height: 0.8;
     color: rgba(255, 255, 255, 0.1); }
     @media only screen and (max-width: 767px) {
       .offer-card-item .bg-text {
-        font-size: 6em; } }
+        font-size: 3em; } }
   .offer-card-item.style-two {
     background-color: var(--secondary-color); }
     .offer-card-item.style-two .badge {
@@ -4830,8 +4830,7 @@ h6, .h6, .offer-card-item .available-item, .about-image-part .food-review .text,
     z-index: -1;
     border-radius: 50%;
     border: 1px solid var(--primary-color); }
-  .about-image-part img {
-    border-radius: 50%; }
+  
   .about-image-part .food-review {
     display: -webkit-box;
     display: -ms-flexbox;
