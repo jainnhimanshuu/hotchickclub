@@ -6370,7 +6370,7 @@ h6, .h6, .offer-card-item .available-item, .about-image-part .food-review .text,
   text-transform: uppercase;
   font-family: var(--heading-font);
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: rgba(14, 19, 23, 0.1); }
+  -webkit-text-stroke-color: #d71f13; }
   @media only screen and (max-width: 1399px) {
     .marquee-wrap {
       font-size: 100px; } }
