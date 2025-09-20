@@ -3229,7 +3229,7 @@ h6, .h6, .offer-card-item .available-item, .about-image-part .food-review .text,
   margin-right: auto; }
   @media only screen and (max-width: 575px) {
     .main-menu .mobile-logo {
-      max-width: 150px; } }
+      max-width: 70px; } }
 
 @media only screen and (max-width: 991px) {
   .main-menu .collapse {
